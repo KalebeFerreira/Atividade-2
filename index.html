@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ui.css">
+    <title>CarStore</title>
+</head>
+<body>
+    <form action="recebedados" method="post">
+        <p>Nome:</p> 
+        <input type="text" placeholder="Digite o nome" name="nome"><br>
+    
+        <p>Data de nascimento:</p>
+        <input type="date" name="data_nascimento">
+    
+        <p>Digite a senha:</p>
+        <input type="password" name="senha">
+    
+        <p>Digite seu email:</p>
+        <input type="email" id="email" name="email" required>
+    
+        <p>Modelo do carro desejado:</p>
+        <input type="text" placeholder="Digite o modelo" name="modelo_carro">
+    
+        <p>Ano do carro:</p>
+        <input type="number" placeholder="Digite o ano" name="ano_carro">
+    
+        <p>Forma de pagamento:</p>
+        <input type="radio" name="forma_pagamento" value="a_vista"> À vista
+        <input type="radio" name="forma_pagamento" value="parcelado"> Parcelado
+    
+        <p>Opcionais desejados:</p>
+        <input type="checkbox" name="opcionais[]" value="ar_condicionado"> Ar condicionado
+        <input type="checkbox" name="opcionais[]" value="direcao_hidraulica"> Direção hidráulica
+        <input type="checkbox" name="opcionais[]" value="som_automotivo"> Som automotivo
+    
+        <p>Estado onde reside:</p>
+        <select name="estado">
+            <option value=""></option>
+            <option value="mg">MG</option>
+            <option value="df">DF</option>
+            <option value="go">GO</option>
+        </select>
+    
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
